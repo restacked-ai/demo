@@ -1,0 +1,78 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <script>
+      import CMS from "decap-cms-app";
+
+      const config = {
+        backend: {
+          name: "git-gateway",
+          repo: "restacked-ai/demo",
+          branch: "main",
+          auth_type: "pkce",
+          base_url: "https://auth.decapbridge.com",
+          auth_endpoint: "/sites/048990b7-2bfd-4cbe-bef6-69885a8ed683/pkce",
+          auth_token_endpoint:
+            "/sites/048990b7-2bfd-4cbe-bef6-69885a8ed683/token",
+          gateway_url: "https://gateway.decapbridge.com",
+        },
+        auth: {
+          email_claim: "email",
+          first_name_claim: "first_name",
+          last_name_claim: "last_name",
+          avatar_url_claim: "avatar_url",
+        },
+        load_config_file: false,
+        media_folder: "/src/assets/images",
+        collections: [
+          {
+            name: "posts",
+            label: "Posts",
+            folder: "/src/content/blog",
+            create: true,
+            fields: [
+              {
+                label: "Title",
+                name: "title",
+                widget: "string",
+              },
+              {
+                label: "Description",
+                name: "description",
+                widget: "string",
+              },
+              {
+                label: "Published Date",
+                name: "pubDate",
+                widget: "datetime",
+              },
+              {
+                label: "Hero Image",
+                name: "heroImage",
+                widget: "image",
+              },
+              {
+                label: "Body",
+                name: "body",
+                widget: "markdown",
+              },
+            ],
+          },
+        ],
+        site_url: "https://restacked-ai.github.io",
+      };
+
+      CMS.init({ config });
+    </script>
+  </body>
+</html>
