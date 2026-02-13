@@ -1,7 +1,7 @@
 ---
 title: Third post
 description: Lorem ipsum dolor sit amet
-pubDate: Jul 22 2022
+pubDate: Feb 11 2026
 heroImage: https://res.cloudinary.com/duhicq51j/image/upload/v1770946529/blog-placeholder-2_eded9a.jpg
 ---
 

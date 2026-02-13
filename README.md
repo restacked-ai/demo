@@ -1,10 +1,4 @@
-# Astro Starter Kit: Blog
-
-```sh
-pnpm create astro@latest -- --template blog
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+# Restacked.ai Demo Site
 
 Features:
 
@@ -13,11 +7,13 @@ Features:
 - ✅ SEO-friendly with canonical URLs and OpenGraph data
 - ✅ Sitemap support
 - ✅ RSS Feed support
-- ✅ Markdown & MDX support
+- ✅ Markdown support
+- ✅ DecapCMS for easy content editing
+- ✅ Cloudinary for image hosting and optimization
 
-## 🚀 Project Structure
+## Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside of the demo project, you'll see the following folders and files:
 
 ```text
 ├── public/
@@ -26,6 +22,9 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── content/
 │   ├── layouts/
 │   └── pages/
+│       ├── admin/
+│		├── blog/
+│       └── index.astro
 ├── astro.config.mjs
 ├── README.md
 ├── package.json
@@ -36,27 +35,25 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+The `src/content/` directory contains "collections" of related Markdown documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Any static assets, like images, can be placed in the `public/` directory or imported directly into your Astro components. This project uses Cloudinary for image hosting and optimization, but you can swap that out for any image hosting provider or local images in the `public/` directory.
 
-## 🧞 Commands
+The `src/pages/admin/` directory contains the DecapCMS admin panel, which is configured to edit Markdown files in `src/content/`. You can customize the CMS configuration in `src/pages/admin/index.astro` file.
+
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `pnpm install`         | Installs dependencies                            |
 | `pnpm dev`             | Starts local dev server at `localhost:4321`      |
 | `pnpm build`           | Build your production site to `./dist/`          |
 | `pnpm preview`         | Preview your build locally, before deploying     |
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Want to learn more?
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Check out [Astro docs](https://docs.astro.build).

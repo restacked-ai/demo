@@ -2,9 +2,10 @@
 title: Markdown Style Guide
 description: Here is a sample of some basic Markdown syntax that can be used
   when writing Markdown content in Astro.
-pubDate: Jun 19 2024
+pubDate: Feb 12 2026
 heroImage: https://res.cloudinary.com/duhicq51j/image/upload/v1770946529/blog-placeholder-1_pgkvvn.jpg
 ---
+
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
 ## Headings
@@ -57,7 +58,7 @@ The blockquote element represents content that is quoted from another source, op
 #### Output
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.\
-> **Note** that you can use *Markdown syntax* within a blockquote.
+> **Note** that you can use _Markdown syntax_ within a blockquote.
 
 ### Blockquote with attribution
 
@@ -89,7 +90,7 @@ The blockquote element represents content that is quoted from another source, op
 
 | Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
-| *italics* | **bold** | `code` |
+| _italics_ | **bold** | `code` |
 
 ## Code Blocks
 
@@ -157,9 +158,9 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 
 #### Output
 
-* List item
-* Another item
-* And another item
+- List item
+- Another item
+- And another item
 
 ### Nested list
 
@@ -177,15 +178,14 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 
 #### Output
 
-* Fruit
+- Fruit
+  - Apple
+  - Orange
+  - Banana
 
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-
-  * Milk
-  * Cheese
+- Dairy
+  - Milk
+  - Cheese
 
 ## Other Elements — abbr, sub, sup, kbd, mark
 
