@@ -13,6 +13,7 @@
   <body>
     <script>
       import CMS from "decap-cms-app";
+      import cloudinary from "decap-cms-media-library-cloudinary";
 
       const config = {
         backend: {
@@ -77,7 +78,7 @@
         ],
         site_url: "https://restacked-ai.github.io/demo",
       };
-
+      CMS.registerMediaLibrary(cloudinary);
       CMS.init({ config: config as any });
     </script>
   </body>
