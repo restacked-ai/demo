@@ -1,0 +1,49 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`About - ${SITE_TITLE}`} description="Learn about how this website is editable via AI-powered coding tools" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>About This Website</h1>
+      <p>
+        This website is fully editable using AI-powered coding tools like <a href="https://v0.dev">v0</a>. Instead of manually editing files or managing complex deployments, you can use an AI assistant to make changes to your codebase directly.
+      </p>
+      
+      <h2>How It Works</h2>
+      <ol>
+        <li><strong>Import the project:</strong> Import this GitHub repository into v0 or your favorite AI-powered coding tool</li>
+        <li><strong>Make changes:</strong> Describe what you want to change, and the AI will generate the code modifications</li>
+        <li><strong>Preview:</strong> Preview your changes in real-time before committing</li>
+        <li><strong>Open a Pull Request:</strong> Submit your changes as a pull request on GitHub</li>
+        <li><strong>Review and Merge:</strong> The repository admin reviews and merges the PR</li>
+        <li><strong>Auto-deploy:</strong> Once merged to the main branch, GitHub Actions automatically deploy the changes to the live site</li>
+      </ol>
+
+      <h2>Why This Approach?</h2>
+      <p>
+        This workflow combines the power of AI-assisted development with modern DevOps practices. You get:
+      </p>
+      <ul>
+        <li>✨ Fast, intelligent code generation</li>
+        <li>🔍 Real-time preview and iteration</li>
+        <li>🔒 Code review before deployment</li>
+        <li>🚀 Automated deployment on merge</li>
+        <li>📝 Full git history and version control</li>
+      </ul>
+
+      <p>
+        Whether you're updating content, adding new features, or redesigning sections, this approach makes web development more accessible and collaborative.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
