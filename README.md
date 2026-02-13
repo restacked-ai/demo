@@ -10,6 +10,7 @@ Features:
 - ✅ Markdown support
 - ✅ DecapCMS for easy content editing
 - ✅ Cloudinary for image hosting and optimization
+- ✅ GitHub Actions for automated deployment to GitHub Pages
 
 ## Project Structure
 
